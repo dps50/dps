@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPS LOGIN PAGE</title>
+    <script>
+        function login(){
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if(username =='')
+                {
+                    alert("please enter user name")
+                }
+                else if(password=='')
+                {
+                    alert('please enter password')
+                }
+                else if(username=='1',password=='1')
+                {
+                    window.location="https://dps3.w3spaces.com/main.html";
+                }
+                else if(username=='2',password=='2')
+                {
+                    window.location="https://dps3.w3spaces.com/files1/Upload-copy-1.html";
+                }
+                else
+                {
+                    alert("incorrect")
+                }
+            }
+    </script>
+</head>
+<body>
+    <h1>Login Form</h1>
+            <br>
+            <input type="text" id="username" placeholder="Username" class="tb"/>
+            <br>
+            <input type="password" id="password" placeholder="Password" class="tb"/>
+            <br>
+            <input type="submit" value="Login" onclick="login()" class="button"/>
+</body>
+</html>
